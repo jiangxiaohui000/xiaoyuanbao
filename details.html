@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>校园宝 - 大学生的闲置集散地</title>
+    <link rel="shortcut icon" href="images/icon.jpg">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_718587_ptx8x7lyt9l.css">
+    <link rel="stylesheet" href="style/layout.css">
+    <script src="scripts/jquery-1.11.1.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/top.js"></script>
+    <script src="scripts/details_show.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <div class="header-main">
+        <!--左边登录区域-->
+        <ul class="header-main-l">
+            <li class="Li-area">
+                <div class="area">
+                    <span class="iconfont icon-location"></span>
+                    <span class="headerarea">北京</span>
+                </div>
+            </li>
+            <li>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="javascript:;" title="消息" class="message">
+                    <span class="iconfont icon-xiaoxi"></span>
+                    <span>消息</span>
+                </a>
+            </li>
+            <li>
+                <span>|</span>
+            </li>
+            <li>
+                <div>
+                    <a href="login.html" class="sign-in" title="登录" target="_blank">亲,请登录</a>&nbsp;
+                    <a href="login.html" class="sign-out" title="注册" target="_blank">免费注册</a>
+                </div>
+            </li>
+        </ul>
+        <!--右边导航区域-->
+        <ul class="header-main-r">
+            <li class="menu">
+                <div class="menu-hd">
+                    <a href="javascript:;" class="home">校园宝首页</a>
+                </div>
+            </li>
+            <li class="menu">
+                <div class="menu-hd">
+                    <a href="javascript:;">我的校园宝</a>
+                </div>
+            </li>
+            <li class="menu">
+                <div class="menu-hd">
+                    <a href="javascript:;" class="gouwuche">
+                        <span class="iconfont icon-gouwuche"></span>
+                        <span>购物车</span>
+                    </a>
+                </div>
+            </li>
+            <li class="menu">
+                <div class="menu-hd">
+                    <a href="javascript:;" class="collect">
+                        <span class="iconfont icon-shoucangjia"></span>
+                        <span>收藏夹</span>
+                    </a>
+                </div>
+            </li>
+            <li class="menu">
+                <div class="menu-hd">
+                    <span>|</span>
+                </div>
+            </li>
+            <li class="menu">
+                <div class="menu-hd">
+                    <a href="javascript:;">
+                        <span class="iconfont icon-dianhua"></span>
+                        <span> 联系客服</span>
+                    </a>
+                </div>
+            </li>
+            <li class="menu" id="sellerCenter">
+                <div class="menu-hd">
+                    <a href="javascript:;">
+                        <span>卖家中心</span>
+                        <span class="iconfont icon-xiala"></span>
+                    </a>
+
+                </div>
+            </li>
+            <li class="menu">
+                <div class="menu-hd">
+                    <a href="javascript:;">关于校园宝</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--搜索区域-->
+<div class="wrap">
+    <div class="wrap-main">
+        <!--左边的logo-->
+        <div class="wrap-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="校园宝，安全、高效的二手交易平台">
+            </a>
+        </div>
+        <!--右边的搜索及发布-->
+        <div class="wrap-nav">
+            <!--搜索框-->
+            <div class="wrap-nav-search">
+                <input type="search" placeholder="校园宝优选" class="search" autofocus required>
+                <button class="ok"><span class="iconfont icon-fangdajing"></span></button>
+            </div>
+            <div class="wrap-nav-recommend">
+                <ul>
+                    <li><a href="javascript:;">笔记本电脑</a></li>
+                    <li><a href="javascript:;">手机</a></li>
+                    <li><a href="javascript:;">手表</a></li>
+                    <li class="discount"><a href="javascript:;">限时优惠</a></li>
+                    <li><a href="javascript:;">满199-100</a></li>
+                    <li><a href="javascript:;">保价30天</a></li>
+                    <li><a href="javascript:;">立减200</a></li>
+                </ul>
+            </div>
+            <!--发布区域-->
+            <div class="wrap-nav-release">
+                <div class="release-left">
+                    <a href="javascript:;">
+                            <span class="span1">
+                                发布闲置
+                            </span>
+                    </a>
+                </div>
+                <div class="release-right">
+                    <a href="javascript:;">
+                            <span class="span1">
+                                我的发布
+                            </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--商品信息-->
+<div class="message">
+    <div class="message-main">
+        <ul>
+            <li class="message-main-li1">
+                <img src="images/touxiang.jpg" alt="" class="L">
+                <a href="#" title="点击查看卖家信息">当然是小可爱啦</a>
+                <span class="iconfont icon-vip message-main-li1-span1" title="VIP会员"></span>
+                <span class="iconfont icon-shimingrenzheng2 message-main-li1-span2" title="已通过实名认证" ></span>
+            </li>
+            <li>宝贝浏览次数:100</li>
+            <li>最近编辑时间:2018-02-03</li>
+            <li>卖家信誉度：<i class="iconfont icon-wujiaoxingmian"></i><i class="iconfont icon-wujiaoxingmian"></i><i class="iconfont icon-wujiaoxingmian"></i></li>
+            <li>共卖出：23件宝贝</li>
+            <li><a href="#">举报该宝贝</a></li>
+        </ul>
+    </div>
+</div>
+<!--产品展示区域-->
+<div class="show">
+    <div class="show-main">
+        <!--左侧-->
+        <div class="show-left">
+            <div class="show-left-top" id="show_left_top"></div>
+            <div id="box">
+                <a id="left" href="javascript:;"><i class="iconfont icon-left-copy"></i></a>
+                <a id="right" href="javascript:;"><i class="iconfont icon-icon14"></i></a>
+                <div class="content">
+                    <div id="wrap">
+                        <ul class="clearfix">
+                            <li id="li01"><img src="images/show-pic1.jpg" alt=""></li>
+                            <li id="li02"><img src="images/show-pic2.jpg" alt=""></li>
+                            <li id="li03"><img src="images/show-pic3.jpg" alt=""></li>
+                            <li id="li04"><img src="images/show-pic4.jpg" alt=""></li>
+                            <li id="li05"><img src="images/show-pic5.jpg" alt=""></li>
+                            <li id="li06"><img src="images/show-pic6.jpg" alt=""></li>
+                            <li id="li07"><img src="images/show-pic7.jpg" alt=""></li>
+                            <li id="li08"><img src="images/show-pic8.jpg" alt=""></li>
+                            <li id="li09"><img src="images/show-pic1.jpg" alt=""></li>
+                            <li id="li10"><img src="images/show-pic2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右侧-->
+        <div class="show-right">
+            <div class="show-right-title">
+                <h1>OPPO find x全面屏手机</h1>
+                <p>价格：<i class="iconfont icon-renminbi"></i><span>3500</span></p>
+            </div>
+            <div class="description">
+                <p>成色：9.5成新</p>
+                <p>购买渠道：天猫</p>
+                <p>是否配件齐全：是</p>
+                <p>是否有发票：是</p>
+                <p>地址：天津理工大学16号教学楼</p>
+                <p>联系方式：18363671622</p>
+                <a href="#" class="connect">在线交谈</a>
+                <a href="#" class="collection">收藏</a>
+                <a href="#" class="support">赞</a>
+            </div>
+        </div>
+        <!--相关推荐-->
+        <div class="show-xiangguan">
+            <p>相关推荐</p>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/xiangguan1.jpg" alt="">
+                        <p>华为nova3</p>
+                        <p><i class="iconfont icon-renminbi"></i>1000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/xiangguan2.jpg" alt="">
+                        <p>华为mate 10 pro</p>
+                        <p><i class="iconfont icon-renminbi"></i>1500</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/xiangguan3.jpg" alt="">
+                        <p>荣耀9i</p>
+                        <p><i class="iconfont icon-renminbi"></i>333</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/xiangguan4.jpg" alt="">
+                        <p>oppo R15</p>
+                        <p><i class="iconfont icon-renminbi"></i>2000</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!--详细介绍-->
+        <div class="show-intro">
+            <div class="show-intro-title"><h1>宝贝描述</h1></div>
+            <div class="show-intro-bottom">
+                <p>使用3个月，很新，无磕碰无划痕，配件都在，正规渠道购入，放心购买，包邮</p>
+                <ul>
+                    <li><img src="images/oppo1.jpg" alt=""></li>
+                    <li><img src="images/oppo2.jpg" alt=""></li>
+                    <li><img src="images/oppo3.jpg" alt=""></li>
+                    <li><img src="images/oppo4.jpg" alt=""></li>
+                    <li><img src="images/oppo5.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="footer-ensure"></div>
+    <div class="footer-help">
+        <dl>
+            <dt>
+                <span>购物指南</span>
+            </dt>
+            <dd>
+                <a href="javascript:;">免费注册</a>
+                <a href="javascript:;">购物流程</a>
+                <a href="javascript:;">会员介绍</a>
+                <a href="javascript:;">常见问题</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>校园宝保障</dt>
+            <dd>
+                <a href="javascript:;">发票保障</a>
+                <a href="javascript:;">售后规则</a>
+                <a href="javascript:;">缺货赔付</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>支付方式</dt>
+            <dd>
+                <a href="javascript:;">银行卡</a>
+                <a href="javascript:;">微信支付</a>
+                <a href="javascript:;">支付宝</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>售后服务</dt>
+            <dd>
+                <a href="javascript:;">服务热线</a>
+                <a href="javascript:;">价格保护</a>
+                <a href="javascript:;">退款说明</a>
+                <a href="javascript:;">退货/换货</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>手机校园宝</dt>
+            <dd>
+                <img src="images/code.png" alt="扫描下载手机校园宝">
+            </dd>
+        </dl>
+    </div>
+    <div class="footer-copyright">
+        <p class="copyright-info">
+            <a href="javascript:;">关于校园宝</a>
+            <span>|</span>
+            <a href="javascript:;">帮助中心</a>
+            <span>|</span>
+            <a href="javascript:;">开放平台</a>
+            <span>|</span>
+            <a href="javascript:;">诚聘英才</a>
+            <span>|</span>
+            <a href="javascript:;">联系我们</a>
+            <span>|</span>
+            <a href="javascript:;">网站合作</a>
+            <span>|</span>
+            <a href="javascript:;">法律声明及隐私权政策</a>
+            <span>|</span>
+            <a href="javascript:;">知识产权</a>
+            <span>|</span>
+            <a href="javascript:;">廉正举报</a>
+            <span>|</span>
+            <a href="javascript:;">规则意见征集</a>
+        </p>
+        <p class="copyright-otherlink">
+            <a href="javascript:;">合作伙伴</a>
+            <span>|</span>
+            <a href="javascript:;">校园活动</a>
+            <span>|</span>
+            <a href="javascript:;">营销中心</a>
+            <span>|</span>
+            <a href="javascript:;">风险监测</a>
+            <span>|</span>
+            <a href="javascript:;">隐私政策</a>
+            <span>|</span>
+            <a href="javascript:;">校园宝公益</a>
+            <span>|</span>
+            <a href="javascript:;">English Site</a>
+        </p>
+        <div class="copyright">
+            增值电信业务经营许可证： 津ZZ-20171111&nbsp;&nbsp;&nbsp;
+            网络文化经营许可证：津网文[2017]0435-015号&nbsp;&nbsp;&nbsp;
+            <a href="javascript:;">12318举报</a><br>
+            互联网药品信息服务资质证书编号：津-（经营性）-2017-0001 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+            <img src="images/emblem.jpg" alt="" class="emblem">津公网安备 33012342300120号 <br>
+            <a href="javascript:;">© 2017-2017 xiaoyuanbao 版权所有</a><br>
+            <img src="images/commerce.jpg" alt="">&nbsp;
+            <img src="images/licence.jpg" alt="">
+        </div>
+    </div>
+</div>
+<!--返回顶部-->
+<div class="top" id="top">
+    <img src="images/top.jpg" alt="返回顶部">
+</div>
+</body>
+</html>

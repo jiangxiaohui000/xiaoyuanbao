@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>校园宝 - 大学生的闲置集散地</title>
+    <link rel="stylesheet" href="style/layout.css">
+    <link rel="shortcut icon" href="images/icon.jpg">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_718587_hs0mvtr5rxa.css">
+    <script src="scripts/jquery-1.11.1.js"></script>
+    <script src="scripts/addLoadEvent.js"></script>
+    <script src="scripts/animateslide.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <!--<script src="scripts/arrows.js"></script>-->
+    <script src="scripts/seckill.js"></script>
+    <script src="scripts/schooltianjin.js"></script>
+    <script src="scripts/schoolshanghai.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/top.js"></script>
+    <!--<script src="scripts/lift.js"></script>-->
+    <script src="scripts/fixsearch.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="header">
+        <div class="header-main">
+            <!--左边登录区域-->
+            <ul class="header-main-l">
+                            <li class="Li-area">
+                                <div class="area">
+                                    <span class="iconfont icon-location"></span>
+                                    <span class="headerarea">北京</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span>|</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="消息" class="message">
+                                    <span class="iconfont icon-xiaoxi"></span>
+                                    <span>消息</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span>|</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="login.html" class="sign-in" title="登录" target="_blank">亲,请登录</a>&nbsp;
+                                    <a href="login.html" class="sign-out" title="注册" target="_blank">免费注册</a>
+                                </div>
+                            </li>
+                        </ul>
+            <!--右边导航区域-->
+            <ul class="header-main-r">
+                            <li class="menu">
+                                <div class="menu-hd">
+                                    <a href="javascript:;" class="home">校园宝首页</a>
+                                </div>
+                            </li>
+                            <li class="menu">
+                                <div class="menu-hd">
+                                    <a href="javascript:;">我的校园宝</a>
+                                </div>
+                            </li>
+                            <li class="menu">
+                                <div class="menu-hd">
+                                    <a href="javascript:;" class="gouwuche">
+                                        <span class="iconfont icon-gouwuche"></span>
+                                        <span>购物车</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="menu">
+                                <div class="menu-hd">
+                                    <a href="javascript:;" class="collect">
+                                        <span class="iconfont icon-shoucangjia"></span>
+                                        <span>收藏夹</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="menu">
+                                <div class="menu-hd">
+                                    <span>|</span>
+                                </div>
+                            </li>
+                            <li class="menu">
+                                <div class="menu-hd">
+                                    <a href="javascript:;">
+                                        <span class="iconfont icon-dianhua"></span>
+                                        <span> 联系客服</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="menu" id="sellerCenter">
+                                <div class="menu-hd">
+                                    <a href="javascript:;">
+                                        <span>卖家中心</span>
+                                        <span class="iconfont icon-xiala"></span>
+                                    </a>
+
+                                </div>
+                            </li>
+                            <li class="menu">
+                                <div class="menu-hd">
+                                    <a href="javascript:;">关于校园宝</a>
+                                </div>
+                            </li>
+                        </ul>
+        </div>
+    </div>
+
+    <!--搜索区域-->
+    <div class="wrap">
+        <div class="wrap-main">
+            <!--左边的logo-->
+            <div class="wrap-logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="校园宝，安全、高效的二手交易平台">
+                </a>
+            </div>
+            <!--右边的搜索及发布-->
+            <div class="wrap-nav">
+                <!--搜索框-->
+                <div class="wrap-nav-search">
+                    <input type="search" placeholder="校园宝优选" class="search" autofocus required>
+                    <button class="ok"><span class="iconfont icon-fangdajing"></span></button>
+                </div>
+                <div class="wrap-nav-recommend">
+                    <ul>
+                        <li><a href="javascript:;">笔记本电脑</a></li>
+                        <li><a href="javascript:;">手机</a></li>
+                        <li><a href="javascript:;">手表</a></li>
+                        <li class="discount"><a href="javascript:;">限时优惠</a></li>
+                        <li><a href="javascript:;">满199-100</a></li>
+                        <li><a href="javascript:;">保价30天</a></li>
+                        <li><a href="javascript:;">立减200</a></li>
+                    </ul>
+                </div>
+                <!--发布区域-->
+                <div class="wrap-nav-release">
+                    <div class="release-left">
+                        <a href="javascript:;">
+                            <span class="span1">
+                                发布闲置
+                            </span>
+                        </a>
+                    </div>
+                    <div class="release-right">
+                        <a href="javascript:;">
+                            <span class="span1">
+                                我的发布
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--菜单栏/轮播图/个人信息-->
+    <div class="slide">
+        <div class="slideshow">
+            <!--左边菜单栏-->
+            <div class="slideshow-l">
+                <ul class="slideshow-item">
+                    <li><a href="javascript:;">手机</a> / <a href="javascript:;">电脑</a> / <a href="javascript:;">数码</a></li>
+                    <li><a href="javascript:;">手表</a> / <a href="javascript:;">配饰</a></li>
+                    <li><a href="javascript:;">男装</a> / <a href="javascript:;">女装</a></li>
+                    <li><a href="javascript:;">运动</a> / <a href="javascript:;">户外</a></li>
+                    <li><a href="javascript:;">美妆</a> / <a href="javascript:;">个护</a></li>
+                    <li><a href="javascript:;">图书</a> / <a href="javascript:;">音像</a></li>
+                    <li><a href="javascript:;">大家电</a> / <a href="javascript:;">生活电器</a></li>
+                    <li><a href="javascript:;">玩具</a> / <a href="javascript:;">食品</a></li>
+                    <li><a href="javascript:;">配件</a> / <a href="javascript:;">用品</a></li>
+                    <li><a href="javascript:;">零食</a> / <a href="javascript:;">茶酒</a> / <a href="javascript:;">进口</a></li>
+                    <li><a href="javascript:;">厨具</a> / <a href="javascript:;">收纳</a> / <a href="javascript:;">宠物</a></li>
+                    <li><a href="javascript:;">运营</a> / <a href="javascript:;">靓号</a> / <a href="javascript:;">充值</a></li>
+                </ul>
+            </div>
+            <!--中间轮播图-->
+            <div class="slideshow-m">
+                <!--图片-->
+                <div class="slideshow-pic" id="slideshowPic">
+                    <ul id="slideshowPicUl">
+                        <li><a href="javascript:;"><img src="images/shangxian.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/jiangjia.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/shuang11.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/ganen.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <!--圆点-->
+                <div class="slideshow-circle" id="slideshowCircle"></div>
+                <!--箭头-->
+                <div class="slideshow-arrl" id="slideshowArrl">&lt;</div>
+                <div class="slideshow-arrr" id="slideshowArrr">&gt;</div>
+            </div>
+            <!--右边个人信息-->
+            <div class="slideshow-r">
+                <div class="slideuser">
+                    <div class="slideuser-info">
+                        <div class="slideuser-info-avatar">
+                            <img src="images/myhead.jpg" alt="头像">
+                            <a href="javascript:;" class="slideuser-info-avatar-lk"></a>
+                        </div>
+                        <div class="slideuser-info-show">
+                            <p class="slideuser-info-show-wel">
+                                欢迎您！<a href="javascript:;">姜晓晖</a>
+                            </p>
+                            <p>
+                                <a href="login.html" class="slideuser-info-show-priv" target="_blank">登录</a>
+                                <a href="login.html" class="slideuser-info-show-mem" target="_blank">注册</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideprofit">
+                    <a href="javascript:;">
+                        <p>开通会员，享受优惠</p>
+                    </a>
+                </div>
+                <div class="slidenews">
+                    <span>公告</span>
+                    <ul>
+                        <li><a href="javascript:;">校园宝上线公告！</a></li>
+                        <li><a href="javascript:;">国际大牌，秒到手软。</a></li>
+                        <li><a href="javascript:;">男神俱乐部，赶紧来看看吧！</a></li>
+                        <li><a href="javascript:;">每日享折扣 校园品质游。</a></li>
+                        <li><a href="javascript:;">校园宝推出统一客服电话"400-000-0000”。</a></li>
+                        <li><a href="javascript:;">天府大件运营中心开仓公告。</a></li>
+                        <li><a href="javascript:;">校园宝会员权益。</a></li>
+                        <li><a href="javascript:;">校园宝扶贫频道正式上线运营。</a></li>
+                        <li><a href="javascript:;">校园宝小法庭项目正式启动。</a></li>
+                        <li><a href="javascript:;">校园宝近期系统维护公告。</a></li>
+                        <li><a href="javascript:;">大学生的一封信！</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--秒杀-->
+    <div class="seckill">
+        <div class="seckill-inner">
+            <div class="seckill-nav">
+                <div class="seckill-nav-l">
+                    <i class="seckill-nav-l-tri"></i>
+                    <i class="seckill-nav-l-clock"></i>
+                    <h1 class="seckill-nav-l-h1">校园秒杀</h1>
+                    <a href="javascript:;" class="seckill-nav-l-a">
+                        <p>查看更多</p>
+                        <i class="seckill-nav-l-arr"></i>
+                    </a>
+                </div>
+                <div class="seckill-nav-r">
+                    <div class="seckill-nav-r-inner">
+                        <span>当前场次</span>
+                        <div class="seckill-nav-r-time">
+                            <div class="seckill-nav-r-hour" id="seckillNavRHour">
+                                <span id="seckillHour"></span>
+                            </div>
+                            <div class="seckill-nav-r-split">
+                                <i class="seckill-nav-r-split-t"></i>
+                                <i class="seckill-nav-r-split-b"></i>
+                            </div>
+                            <div class="seckill-nav-r-minute" id="seckillNavRMinute">
+                                <span id="seckillMinute"></span>
+                            </div>
+                            <div class="seckill-nav-r-split">
+                                <i class="seckill-nav-r-split-t"></i>
+                                <i class="seckill-nav-r-split-b"></i>
+                            </div>
+                            <div class="seckill-nav-r-second" id="seckillNavRSecond">
+                                <span  id="seckillSecond"></span>
+                            </div>
+                        </div>
+                        <span>后结束</span>
+                    </div>
+                </div>
+            </div>
+            <div class="seckill-content">
+                <ul>
+                    <li>
+                        <div class="seckill-content-pic">
+                            <a href="javascript:;">
+                                <img src="images/pen.jpg" alt="齐心(Comix)60支装蓝色 防滑握手圆珠笔 0.7mm 新老包装随机 办公文具 BP102R" title="齐心(Comix)60支装蓝色 防滑握手圆珠笔 0.7mm 新老包装随机 办公文具 BP102R" class="seckill-content-pic-img">
+                                <p class="seckill-content-pic-name">齐心(Comix)60支装蓝色 防滑握手圆珠笔 0.7mm 新老包装随机 办公文具 BP102R</p>
+                            </a>
+                            <span class="seckill-content-pic-shadow"></span>
+                        </div>
+                        <p class="seckill-content-pri">
+                            <span class="seckill-content-pri-new">
+                                <i>￥</i>
+                                <span>1.00</span>
+                            </span>
+                            <span class="seckill-content-pri-old">
+                                <i>￥</i>
+                                <del>11.50</del>
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="seckill-content-pic">
+                            <a href="javascript:;">
+                                <img src="images/computer.jpg" alt="联想（ThinkPad） E470c（20H3A00GCD）14英寸笔记本电脑（i3-6006U 4G 500G 2G独显 Win10）黑色" title="联想（ThinkPad） E470c（20H3A00GCD）14英寸笔记本电脑（i3-6006U 4G 500G 2G独显 Win10）黑色" class="seckill-content-pic-img">
+                                <p class="seckill-content-pic-name">联想（ThinkPad） E470c（20H3A00GCD）14英寸笔记本电脑（i3-6006U 4G 500G 2G独显 Win10）黑色</p>
+                            </a>
+                            <span class="seckill-content-pic-shadow"></span>
+                        </div>
+                        <p class="seckill-content-pri">
+                            <span class="seckill-content-pri-new">
+                                <i>￥</i>
+                                <span>4588.00</span>
+                            </span>
+                            <span class="seckill-content-pri-old">
+                                <i>￥</i>
+                                <del>6300.00</del>
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="seckill-content-pic">
+                            <a href="javascript:;">
+                                <img src="images/watch.jpg" alt="丹尼尔惠灵顿 DanielWellington DW手表新款32mm金色边白盘不锈钢米兰风格表带 DW00100163" title="丹尼尔惠灵顿 DanielWellington DW手表新款32mm金色边白盘不锈钢米兰风格表带 DW00100163" class="seckill-content-pic-img">
+                                <p class="seckill-content-pic-name">丹尼尔惠灵顿 DanielWellington DW手表新款32mm金色边白盘不锈钢米兰风格表带 DW00100163</p>
+                            </a>
+                            <span class="seckill-content-pic-shadow"></span>
+                        </div>
+                        <p class="seckill-content-pri">
+                            <span class="seckill-content-pri-new">
+                                <i>￥</i>
+                                <span>1288.00</span>
+                            </span>
+                            <span class="seckill-content-pri-old">
+                                <i>￥</i>
+                                <del>1499.00</del>
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="seckill-content-pic">
+                            <a href="javascript:;">
+                                <img src="images/mouse.jpg" alt="Apple MLA02CH/A Apple Magic Mouse 2 无线鼠标第二代" title="Apple MLA02CH/A Apple Magic Mouse 2 无线鼠标第二代" class="seckill-content-pic-img">
+                                <p class="seckill-content-pic-name">Apple MLA02CH/A Apple Magic Mouse 2 无线鼠标第二代</p>
+                            </a>
+                            <span class="seckill-content-pic-shadow"></span>
+                        </div>
+                        <p class="seckill-content-pri">
+                            <span class="seckill-content-pri-new">
+                                <i>￥</i>
+                                <span>399.00</span>
+                            </span>
+                            <span class="seckill-content-pri-old">
+                                <i>￥</i>
+                                <del>500.00</del>
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="seckill-content-pic">
+                            <a href="javascript:;">
+                                <img src="images/phone.jpg" alt="锤子 坚果Pro 32GB 巧克力色 全网通 移动联通电信4G手机 双卡双待" title="锤子 坚果Pro 32GB 巧克力色 全网通 移动联通电信4G手机 双卡双待" class="seckill-content-pic-img">
+                                <p class="seckill-content-pic-name">锤子 坚果Pro 32GB 巧克力色 全网通 移动联通电信4G手机 双卡双待</p>
+                            </a>
+                            <span class="seckill-content-pic-shadow"></span>
+                        </div>
+                        <p class="seckill-content-pri">
+                            <span class="seckill-content-pri-new">
+                                <i>￥</i>
+                                <span>1599.00</span>
+                            </span>
+                            <span class="seckill-content-pri-old">
+                                <i>￥</i>
+                                <del>1388.00</del>
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="seckill-content-pic">
+                            <a href="javascript:;">
+                                <img src="images/book.jpg" alt="福尔摩斯探案集全集（套装10册）永久珍藏版 全译本 世界经典名著 课外阅读 柯南 道尔" title="福尔摩斯探案集全集（套装10册）永久珍藏版 全译本 世界经典名著 课外阅读 柯南 道尔" class="seckill-content-pic-img">
+                                <p class="seckill-content-pic-name">福尔摩斯探案集全集（套装10册）永久珍藏版 全译本 世界经典名著 课外阅读 柯南 道尔</p>
+                            </a>
+                            <span class="seckill-content-pic-shadow"></span>
+                        </div>
+                        <p class="seckill-content-pri">
+                            <span class="seckill-content-pri-new">
+                                <i>￥</i>
+                                <span>55.00</span>
+                            </span>
+                            <span class="seckill-content-pri-old">
+                                <i>￥</i>
+                                <del>39.50</del>
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--主要内容区域-->
+    <!--电梯-->
+    <!--<div class="lift" id="lift">-->
+        <!--<ul>-->
+            <!--<li id="liftbeijing"><a href="javascript:;">1F <div class="wenzi">北京</div></a></li>-->
+            <!--<li id="lifttianjin"><a href="javascript:;">2F <div class="wenzi">天津</div></a></li>-->
+            <!--<li id="liftshanghai"><a href="javascript:;">3F <div class="wenzi">上海</div></a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+
+
+    <!--学校-->
+    <div class="school-beijing" id="schoolbeijing">
+        <div class="school-beijing-title">
+            <div class="school-beijing-title-span L">
+                <span>北京市</span>
+                <a href="javascript:;">查看更多 <i class="iconfont icon-gengduo1"></i></a>
+            </div>
+        </div>
+        <ul class="school-beijing-list">
+            <li><a href="javascript:;">
+                <img src="images/qinghua.png" alt="清华大学">
+            </a></li>
+            <li><a href="javascript:;">
+                <img src="images/beida.png" alt="北京大学">
+            </a></li>
+            <li><a href="javascript:;">
+                <img src="images/beishi.png" alt="北京师范大学">
+            </a></li>
+            <li><a href="javascript:;">
+                <img src="images/beili.png" alt="北京理工大学">
+            </a></li>
+            <li><a href="javascript:;">
+                <img src="images/beiyou.png" alt="北京邮电大学">
+            </a></li>
+            <li><a href="javascript:;">
+                <img src="images/beike.png" alt="北京科技大学">
+            </a></li>
+            <li><a href="javascript:;">
+                <img src="images/beidian.png" alt="北京电影学院">
+            </a></li>
+            <li><a href="javascript:;">
+                <img src="images/beiwai.png" alt="北京外国语大学">
+            </a></li>
+        </ul>
+    </div>
+    <div class="school-tianjin" id="schoolTianjin">
+        <div class="school-tianjin-name">
+            <span>津</span>
+            <span>门</span>
+            <span>第</span>
+            <span>一</span>
+            <a href="javascript:;" class="iconfont icon-gengduo1" title="查看更多"></a>
+        </div>
+        <div class="school-tianjin-list" id="schoolTianjinList">
+            <ul>
+                <li>
+                    <p>天津大学</p>
+                    <div class="tianjin-things">
+                        <ul class="tianjin-things-fenlei">
+                            <li><a href="javascript:;">男装</a></li>
+                            <li><a href="javascript:;">男鞋</a></li>
+                            <li><a href="javascript:;">女装</a></li>
+                            <li><a href="javascript:;">女鞋</a></li>
+                            <li><a href="javascript:;">美妆</a></li>
+                            <li><a href="javascript:;">手机</a></li>
+                            <li><a href="javascript:;">电脑</a></li>
+                            <li><a href="javascript:;">相机</a></li>
+                            <li><a href="javascript:;">平板</a></li>
+                            <li><a href="javascript:;">玩具</a></li>
+                            <li><a href="javascript:;">图书</a></li>
+                            <li><a href="javascript:;">花草</a></li>
+                            <li><a href="javascript:;">宠物</a></li>
+                            <li><a href="javascript:;">手表</a></li>
+                            <li><a href="javascript:;">游戏</a></li>
+                            <li><a href="javascript:;">更多</a></li>
+                        </ul>
+                        <!--<span class="spjx">商品精选</span>-->
+                        <!--<div class="tianjin-things-scroll">-->
+                            <!--<ul>-->
+                                <!--<li><a href="javascript:;"><img src="images/tianjin-things-1.jpg" alt=""></a></li>-->
+                                <!--<li><a href="javascript:;"><img src="images/tianjin-things-2.jpg" alt=""></a></li>-->
+                                <!--<li><a href="javascript:;"><img src="images/tianjin-things-3.jpg" alt=""></a></li>-->
+                                <!--<li><a href="javascript:;"><img src="images/tianjin-things-4.jpg" alt=""></a></li>-->
+                                <!--<li><a href="javascript:;"><img src="images/tianjin-things-5.jpg" alt=""></a></li>-->
+                                <!--<li><a href="javascript:;"><img src="images/tianjin-things-6.jpg" alt=""></a></li>-->
+                                <!--<li><a href="javascript:;"><img src="images/tianjin-things-7.jpg" alt=""></a></li>-->
+                                <!--<li><a href="javascript:;"><img src="images/tianjin-things-8.jpg" alt=""></a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    </div>
+                </li>
+                <li>
+                    <p>南开大学</p>
+                    <div class="tianjin-things">
+                        <ul class="tianjin-things-fenlei">
+                            <li><a href="javascript:;">男装</a></li>
+                            <li><a href="javascript:;">男鞋</a></li>
+                            <li><a href="javascript:;">女装</a></li>
+                            <li><a href="javascript:;">女鞋</a></li>
+                            <li><a href="javascript:;">美妆</a></li>
+                            <li><a href="javascript:;">手机</a></li>
+                            <li><a href="javascript:;">电脑</a></li>
+                            <li><a href="javascript:;">相机</a></li>
+                            <li><a href="javascript:;">平板</a></li>
+                            <li><a href="javascript:;">玩具</a></li>
+                            <li><a href="javascript:;">图书</a></li>
+                            <li><a href="javascript:;">花草</a></li>
+                            <li><a href="javascript:;">宠物</a></li>
+                            <li><a href="javascript:;">手表</a></li>
+                            <li><a href="javascript:;">游戏</a></li>
+                            <li><a href="javascript:;">更多</a></li>
+                        </ul>
+                        <!--<span class="spjx">商品精选</span>-->
+                        <!--<div class="tianjin-things-scroll">-->
+                        <!--<ul>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-1.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-2.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-3.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-4.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-5.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-6.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-7.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-8.jpg" alt=""></a></li>-->
+                        <!--</ul>-->
+                        <!--</div>-->
+                    </div>
+                </li>
+                <li>
+                    <p>天津理工</p>
+                    <div class="tianjin-things">
+                        <ul class="tianjin-things-fenlei">
+                            <li><a href="javascript:;">男装</a></li>
+                            <li><a href="javascript:;">男鞋</a></li>
+                            <li><a href="javascript:;">女装</a></li>
+                            <li><a href="javascript:;">女鞋</a></li>
+                            <li><a href="javascript:;">美妆</a></li>
+                            <li><a href="javascript:;">手机</a></li>
+                            <li><a href="javascript:;">电脑</a></li>
+                            <li><a href="javascript:;">相机</a></li>
+                            <li><a href="javascript:;">平板</a></li>
+                            <li><a href="javascript:;">玩具</a></li>
+                            <li><a href="javascript:;">图书</a></li>
+                            <li><a href="javascript:;">花草</a></li>
+                            <li><a href="javascript:;">宠物</a></li>
+                            <li><a href="javascript:;">手表</a></li>
+                            <li><a href="javascript:;">游戏</a></li>
+                            <li><a href="javascript:;">更多</a></li>
+                        </ul>
+                        <!--<span class="spjx">商品精选</span>-->
+                        <!--<div class="tianjin-things-scroll">-->
+                        <!--<ul>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-1.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-2.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-3.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-4.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-5.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-6.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-7.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-8.jpg" alt=""></a></li>-->
+                        <!--</ul>-->
+                        <!--</div>-->
+                    </div>
+                </li>
+                <li>
+                    <p>天津师范</p>
+                    <div class="tianjin-things">
+                        <ul class="tianjin-things-fenlei">
+                            <li><a href="javascript:;">男装</a></li>
+                            <li><a href="javascript:;">男鞋</a></li>
+                            <li><a href="javascript:;">女装</a></li>
+                            <li><a href="javascript:;">女鞋</a></li>
+                            <li><a href="javascript:;">美妆</a></li>
+                            <li><a href="javascript:;">手机</a></li>
+                            <li><a href="javascript:;">电脑</a></li>
+                            <li><a href="javascript:;">相机</a></li>
+                            <li><a href="javascript:;">平板</a></li>
+                            <li><a href="javascript:;">玩具</a></li>
+                            <li><a href="javascript:;">图书</a></li>
+                            <li><a href="javascript:;">花草</a></li>
+                            <li><a href="javascript:;">宠物</a></li>
+                            <li><a href="javascript:;">手表</a></li>
+                            <li><a href="javascript:;">游戏</a></li>
+                            <li><a href="javascript:;">更多</a></li>
+                        </ul>
+                        <!--<span class="spjx">商品精选</span>-->
+                        <!--<div class="tianjin-things-scroll">-->
+                        <!--<ul>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-1.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-2.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-3.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-4.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-5.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-6.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-7.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-8.jpg" alt=""></a></li>-->
+                        <!--</ul>-->
+                        <!--</div>-->
+                    </div>
+                </li>
+                <li>
+                    <p>天津工业</p>
+                    <div class="tianjin-things">
+                        <ul class="tianjin-things-fenlei">
+                            <li><a href="javascript:;">男装</a></li>
+                            <li><a href="javascript:;">男鞋</a></li>
+                            <li><a href="javascript:;">女装</a></li>
+                            <li><a href="javascript:;">女鞋</a></li>
+                            <li><a href="javascript:;">美妆</a></li>
+                            <li><a href="javascript:;">手机</a></li>
+                            <li><a href="javascript:;">电脑</a></li>
+                            <li><a href="javascript:;">相机</a></li>
+                            <li><a href="javascript:;">平板</a></li>
+                            <li><a href="javascript:;">玩具</a></li>
+                            <li><a href="javascript:;">图书</a></li>
+                            <li><a href="javascript:;">花草</a></li>
+                            <li><a href="javascript:;">宠物</a></li>
+                            <li><a href="javascript:;">手表</a></li>
+                            <li><a href="javascript:;">游戏</a></li>
+                            <li><a href="javascript:;">更多</a></li>
+                        </ul>
+                        <!--<span class="spjx">商品精选</span>-->
+                        <!--<div class="tianjin-things-scroll">-->
+                        <!--<ul>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-1.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-2.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-3.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-4.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-5.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-6.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-7.jpg" alt=""></a></li>-->
+                        <!--<li><a href="javascript:;"><img src="images/tianjin-things-8.jpg" alt=""></a></li>-->
+                        <!--</ul>-->
+                        <!--</div>-->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--精彩不停-->
+    <div class="wonderful">
+        <div class="won-hd"></div>
+        <ul class="won-content">
+            <li>
+                <a href="details.html">
+                    <img src="images/m1.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m2.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m3.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m4.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m5.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m6.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m7.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m8.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m9.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m1.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m2.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m3.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m4.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m5.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m6.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m7.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m8.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m9.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <img src="images/m10.jpg" alt="">
+                    <div class="won-content-hide">
+                        <span class="won-content-hide-title">【二手95新】Apple Macbook Pro 苹果笔记本电脑 新款 指纹touch bar L42 i5 256G 13寸灰不带bar</span><br><br>
+                        <span class="won-content-hide-price"><i class="iconfont icon-renminbi"></i> 8848</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--底部-->
+    <div class="footer">
+        <div class="footer-ensure"></div>
+        <div class="footer-help">
+            <dl>
+                <dt>
+                    <span>购物指南</span>
+                </dt>
+                <dd>
+                    <a href="javascript:;">免费注册</a>
+                    <a href="javascript:;">购物流程</a>
+                    <a href="javascript:;">会员介绍</a>
+                    <a href="javascript:;">常见问题</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>校园宝保障</dt>
+                <dd>
+                    <a href="javascript:;">发票保障</a>
+                    <a href="javascript:;">售后规则</a>
+                    <a href="javascript:;">缺货赔付</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd>
+                    <a href="javascript:;">银行卡</a>
+                    <a href="javascript:;">微信支付</a>
+                    <a href="javascript:;">支付宝</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd>
+                    <a href="javascript:;">服务热线</a>
+                    <a href="javascript:;">价格保护</a>
+                    <a href="javascript:;">退款说明</a>
+                    <a href="javascript:;">退货/换货</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>手机校园宝</dt>
+                <dd>
+                    <img src="images/code.png" alt="扫描下载手机校园宝">
+                </dd>
+            </dl>
+        </div>
+        <div class="footer-copyright">
+            <p class="copyright-info">
+                <a href="javascript:;">关于校园宝</a>
+                <span>|</span>
+                <a href="javascript:;">帮助中心</a>
+                <span>|</span>
+                <a href="javascript:;">开放平台</a>
+                <span>|</span>
+                <a href="javascript:;">诚聘英才</a>
+                <span>|</span>
+                <a href="javascript:;">联系我们</a>
+                <span>|</span>
+                <a href="javascript:;">网站合作</a>
+                <span>|</span>
+                <a href="javascript:;">法律声明及隐私权政策</a>
+                <span>|</span>
+                <a href="javascript:;">知识产权</a>
+                <span>|</span>
+                <a href="javascript:;">廉正举报</a>
+                <span>|</span>
+                <a href="javascript:;">规则意见征集</a>
+            </p>
+            <p class="copyright-otherlink">
+                <a href="javascript:;">合作伙伴</a>
+                <span>|</span>
+                <a href="javascript:;">校园活动</a>
+                <span>|</span>
+                <a href="javascript:;">营销中心</a>
+                <span>|</span>
+                <a href="javascript:;">风险监测</a>
+                <span>|</span>
+                <a href="javascript:;">隐私政策</a>
+                <span>|</span>
+                <a href="javascript:;">校园宝公益</a>
+                <span>|</span>
+                <a href="javascript:;">English Site</a>
+            </p>
+            <div class="copyright">
+                增值电信业务经营许可证： 津ZZ-20171111&nbsp;&nbsp;&nbsp;
+                网络文化经营许可证：津网文[2017]0435-015号&nbsp;&nbsp;&nbsp;
+                <a href="javascript:;">12318举报</a><br>
+                互联网药品信息服务资质证书编号：津-（经营性）-2017-0001 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                <img src="images/emblem.jpg" alt="" class="emblem">津公网安备 33012342300120号 <br>
+                <a href="javascript:;">© 2017-2017 xiaoyuanbao 版权所有</a><br>
+                <img src="images/commerce.jpg" alt="">&nbsp;
+                <img src="images/licence.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--返回顶部-->
+    <div class="top" id="top">
+        <img src="images/top.jpg" alt="返回顶部">
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
